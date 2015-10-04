@@ -1,7 +1,7 @@
 import sys
 import os.path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from cryptoclient.network.mima import main
+from cryptoclient.network.client import main
 
 if __name__ == "__main__":
     try:

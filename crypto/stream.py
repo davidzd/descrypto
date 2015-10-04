@@ -104,9 +104,18 @@ class StreamCipher:
     def decrypt(self,msg):
         msg = b64decode(msg)
         return self._crypt(msg)
+
+    def decode(self,msg):
+        msg = b64decode(msg)
+        return msg
+
     # method to encrypt the msg and then encode the msg
     def encrypt(self,msg):
         return b64encode(self._crypt(msg))
+
+    def encode(self,msg):
+        msg = b64encode(msg)
+        return msg
     # =============== END CLASS ADDTIONAL METHODS ===================
 # ============== ADD HELPER FUNCTIONS HERE =========================
 
